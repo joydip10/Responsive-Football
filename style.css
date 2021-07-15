@@ -217,26 +217,32 @@ body{
 
 /* Media Queries */
 @media only screen and (max-width:688px) {
+    .header{
+        width:100%;
+    }
     .head{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
         margin-left: 0;
         height: auto;
+        width:100%;
     }
     .heading{
         align-items: flex-start;
         display: flex;
         flex-direction: column;
-        justify-content: left;
         margin-bottom: 0px;
     }
     .heading-caption{
-        width: 388px;
-        height: 91px;
+        width: 100%;
+        height: auto;
         margin-top: 80px;
-        margin-left: 150px;
+        margin-left: 0px;
         margin-bottom: 30px;
+    }
+    .heading-button{
+        margin: 0px;
     }
     .heading-button button {
         background-color: #E02C6D;
@@ -244,10 +250,10 @@ body{
         justify-content: space-around;
         align-items: center;
         padding: 5px 20px;
-        width: 157px;
+        width: 100%;
         color: white;
-        margin-left: 153px;
-        margin-top: 30px;
+        margin-left: 0px;
+        margin-top: 0px;
     }
     .heading-caption h1{
         font-size: 34px;
@@ -263,32 +269,40 @@ body{
     .side-image img{
         width: 90%;
     }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .player-section{
         grid-template-columns: repeat(1,1fr);
         grid-row-gap: 24px;
-        margin-left:38px;
+        margin:0px;
         margin-top:47px;
     }
     .middle-section{
         flex-direction: column;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin: 0px;
         margin-top: 60px;
+        width:100%;
     }
     .section-left{
-        margin-top: 0px;
+        margin: 0px;
         height:auto;
         width:100%;
     }
     .section-left-paragraph h1{
         font-size: 30px;
     }
+    .section-left .section-left-paragraph p{
+        width:100%;
+    }
     .section-right{
-        width:396px;
+        width:100%;
         margin-top: 29px;
     }
     .section-right img{
-        width:396px;
+        width:100%;
     }
     .footer-section{
         display: flex;
@@ -301,14 +315,19 @@ body{
         display: flex;
         flex-direction: column;
     }
+    .footer-body .footer-image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+    }
     .social-media-icons{
         align-items: center;
         margin-left: 0px;
         margin-top:0px;
     }
-    .footer-body .copyright p{
-        font-size:18px;
+    .footer-body .copyright p {
+        font-size: 18px;
         font-weight: 400;
-        margin-left:62px;
+        margin-left: 0px;
     }
 }
