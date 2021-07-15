@@ -223,7 +223,7 @@ body{
     .head{
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-end;
+        align-items: flex-start;
         margin-left: 0;
         height: auto;
         width:100%;
@@ -276,6 +276,122 @@ body{
     }
     .player-section{
         grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 24px;
+        margin:0px;
+        margin-top:47px;
+    }
+    .middle-section{
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 60px;
+        width:100%;
+    }
+    .section-left{
+        margin: 0px;
+        height:auto;
+        width:100%;
+    }
+    .section-left-paragraph h1{
+        font-size: 30px;
+    }
+    .section-left .section-left-paragraph p{
+        width:100%;
+    }
+    .section-right{
+        width:100%;
+        margin-top: 29px;
+    }
+    .section-right img{
+        width:100%;
+    }
+    .footer-section{
+        display: flex;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 27px;
+        margin-bottom: 29px;
+    }
+    .footer-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-body .footer-image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .social-media-icons{
+        align-items: center;
+        margin-left: 0px;
+        margin-top:0px;
+    }
+    .footer-body .copyright p {
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 688px ) and (max-width: 992px){
+    .header{
+        width:100%;
+    }
+    .head{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 0;
+        height: auto;
+        width:100%;
+    }
+    .heading{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .heading-caption{
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .heading-button{
+        margin: 0px;
+    }
+    .heading-button button {
+        background-color: #E02C6D;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 20px;
+        width: 100%;
+        color: white;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .heading-caption h1{
+        font-size: 34px;
+    }
+    
+    .side-image{
+        width: 90%;
+        height: 78%;
+        margin:0px;
+        margin-left:0px;
+        align-self: flex-start;
+    }
+    .side-image img{
+        width: 90%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .player-section{
+        grid-template-columns: repeat(2,1fr);
         grid-row-gap: 24px;
         margin:0px;
         margin-top:47px;
